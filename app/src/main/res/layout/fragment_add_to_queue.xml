@@ -29,6 +29,7 @@
             android:headerDividersEnabled="false"
             android:footerDividersEnabled="false"
             android:choiceMode="multipleChoice"
+            android:fastScrollEnabled="true"
             android:listSelector="@drawable/item_selector"
             android:id="@+id/listView"/>
 

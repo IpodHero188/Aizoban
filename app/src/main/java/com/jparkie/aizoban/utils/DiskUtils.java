@@ -50,6 +50,8 @@ public class DiskUtils {
                     storageDirectories.add("/storage/sdcard0" + File.separator + AizobanApplication.getInstance().getPackageName());
                 } else {
                     storageDirectories.add(rawExternalStorage + File.separator + AizobanApplication.getInstance().getPackageName());
+                    //specific to my device only
+                    storageDirectories.add("/storage/external_SD"+ File.separator + AizobanApplication.getInstance().getPackageName());
                 }
             } else {
                 final String rawUserId;
@@ -72,8 +74,10 @@ public class DiskUtils {
                     rawUserId = isDigit ? lastFolder : "";
                 }
 
+
                 if (TextUtils.isEmpty(rawUserId)) {
                     storageDirectories.add(rawEmulatedStorageTarget + File.separator + AizobanApplication.getInstance().getPackageName());
+
                 } else {
                     storageDirectories.add(rawEmulatedStorageTarget + File.separator + rawUserId + File.separator + AizobanApplication.getInstance().getPackageName());
                 }
