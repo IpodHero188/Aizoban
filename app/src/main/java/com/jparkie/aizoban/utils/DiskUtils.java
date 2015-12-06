@@ -49,7 +49,7 @@ public class DiskUtils {
                 if (TextUtils.isEmpty(rawExternalStorage)) {
                     storageDirectories.add("/storage/sdcard0" + File.separator + AizobanApplication.getInstance().getPackageName());
                 } else {
-                    storageDirectories.add(rawExternalStorage + File.separator + AizobanApplication.getInstance().getPackageName());;
+                    storageDirectories.add(rawExternalStorage + File.separator + AizobanApplication.getInstance().getPackageName());
                 }
             } else {
                 final String rawUserId;
