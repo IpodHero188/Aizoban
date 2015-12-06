@@ -45,23 +45,21 @@
     <string name="preference_source_title">Aktuelle Quelle</string>
     <string name="preference_source_title_summary">Bestimmt welche Manga Quelle benutzt wird</string>
     <string-array name="preference_source_entries">
-        <item>Batoto (EN)</item>
-        <item>Batoto (ES)</item>
         <item>MangaEden (EN)</item>
         <item>MangaEden (IT)</item>
         <item>Mangafox (EN)</item>
         <item>MangaHere (EN)</item>
         <item>MangaHere (ES)</item>
+        <item>MangaPanda (EN)</item>
         <item>MangaReader (EN)</item>
     </string-array>
     <string-array name="preference_source_values">
-        <item>Batoto (EN)</item>
-        <item>Batoto (ES)</item>
         <item>MangaEden (EN)</item>
         <item>MangaEden (IT)</item>
         <item>Mangafox (EN)</item>
         <item>MangaHere (EN)</item>
         <item>MangaHere (ES)</item>
+        <item>MangaPanda (EN)</item>
         <item>MangaReader (EN)</item>
     </string-array>
     <string name="preference_source_default_value">MangaEden (EN)</string>

@@ -62,8 +62,7 @@ public class DownloadService extends Service implements Observer<File> {
 
     private final static int DOWNLOAD_NOTIFICATION_ID = 1337;
 
-    private static final int DOWNLOAD_CORE_POOL_SIZE = Runtime.getRuntime().availableProcessors();
-    private static final int DOWNLOAD_MAXIMUM_POOL_SIZE = (DOWNLOAD_CORE_POOL_SIZE > 0) ? DOWNLOAD_CORE_POOL_SIZE : 2;
+    private static final int DOWNLOAD_MAXIMUM_POOL_SIZE = 1;
     private static final int KEEP_ALIVE_TIME = 1;
     private static final TimeUnit KEEP_ALIVE_TIME_UNIT = TimeUnit.SECONDS;
 
@@ -560,7 +559,7 @@ public class DownloadService extends Service implements Observer<File> {
         PendingIntent pendingIntent = stackBuilder.getPendingIntent(0, PendingIntent.FLAG_UPDATE_CURRENT);
 
         mDownloadNotificationBuilder = new NotificationCompat.Builder(this)
-                .setSmallIcon(R.drawable.ic_logo)
+                .setSmallIcon(R.drawable.aizoban_notification)
                 .setContentTitle(getText(R.string.notification_download_title))
                 .setContentText(getText(R.string.notification_download_text))
                 .setProgress(0, 0, true)

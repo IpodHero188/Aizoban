@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <string name="action_cancel">Annulla</string>
+    <string name="action_clear">Pulisci</string>
+    <string name="action_delete">Cancella</string>
+    <string name="action_download">Scarica</string>
+    <string name="action_drawer_open">Apri</string>
+    <string name="action_drawer_close">Chiudi</string>
+    <string name="action_filter">Filtra</string>
+    <string name="action_help">Aiuto</string>
+    <string name="action_left_to_right">Sinistra-Destra</string>
+    <string name="action_lock_orientation">Blocca Orientamento</string>
+    <string name="action_lock_zoom">Blocca Zoom</string>
+    <string name="action_mark_read">Segna come letto</string>
+    <string name="action_refresh">Aggiorna</string>
+    <string name="action_right_to_left">Destra-Sinistra</string>
+    <string name="action_search">Cerca</string>
+    <string name="action_select_all">Seleziona Tutto</string>
+    <string name="action_select_page">Seleziona Pagina</string>
+    <string name="action_start_downloader">Inizia Download</string>
+    <string name="action_stop_downloader">Ferma Download</string>
+    <string name="action_to_top">Inizio</string>
+    <string name="action_unlock_orientation">Sblocca Orientamento</string>
+    <string name="action_unlock_zoom">Sblocca Zoom</string>
+    <string name="action_share">Condividi</string>
+
+</resources>

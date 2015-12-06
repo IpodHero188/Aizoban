@@ -11,7 +11,7 @@
     <dimen name="baseline_avatar_diameter">48dp</dimen>
 
     <!-- Splash Logo: -->
-    <dimen name="splash_logo_diameter">80dp</dimen>
+    <dimen name="splash_logo_diameter">300dp</dimen>
 
     <!-- ListView: -->
     <dimen name="single_line_height">48dp</dimen>

@@ -20,6 +20,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
 import android.widget.AbsListView;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
@@ -584,7 +585,9 @@ public class MangaActivity extends BaseActivity implements MangaView, MangaMappe
                 float[] hsv = new float[3];
                 Color.RGBToHSV(Color.red(rgbColor), Color.green(rgbColor), Color.blue(rgbColor), hsv);
                 hsv[2] = hsv[2] - 0.2f;
-                getWindow().setStatusBarColor(Color.HSVToColor(hsv));
+                Window window = getWindow();
+                window.setStatusBarColor(Color.HSVToColor(hsv));
+                window.setNavigationBarColor(Color.HSVToColor(hsv));
             }
         }
         if (mMaskImageView != null) {

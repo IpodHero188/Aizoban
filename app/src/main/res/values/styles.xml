@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="primaryColorsTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@color/primaryBlue500</item>
         <item name="colorPrimaryDark">@color/primaryBlue700</item>
         <item name="colorAccent">@color/accentPinkA200</item>
+        <item name="android:navigationBarColor" tools:targetApi="21">@color/primaryBlue700</item>
+    </style>
 
+    <style name="AppTheme" parent="primaryColorsTheme">
         <item name="searchViewStyle">@style/SearchViewStyle</item>
 
         <item name="android:textColorHighlight">#99ff4081</item>
@@ -17,10 +20,10 @@
         <item name="android:fastScrollThumbDrawable">@drawable/fastscroll_thumb</item>
     </style>
 
-    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+    <style name="SplashTheme" parent="primaryColorsTheme">
+        <item name="android:background">@color/primaryBlue500</item>
         <item name="android:windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
-        <item name="android:windowFullscreen">true</item>
         <item name="android:windowContentOverlay">@null</item>
     </style>
 

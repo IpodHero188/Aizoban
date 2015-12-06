@@ -271,13 +271,13 @@ public class English_MangaReader implements Source {
     private Manga parseHtmlToManga(RequestWrapper request, String unparsedHtml) {
         Document parsedDocument = Jsoup.parse(unparsedHtml);
 
-        Elements detailElements = parsedDocument.select("div#mangaproperties").select("td:not([class])");
+        Elements detailElements = parsedDocument.select("div#mangaproperties td");
 
-        Element artistElement = detailElements.get(5);
-        Element authorElement = detailElements.get(4);
+        Element artistElement = detailElements.get(11);
+        Element authorElement = detailElements.get(9);
         Element descriptionElement = parsedDocument.select("div#readmangasum > p").first();
-        Elements genreElements = detailElements.get(7).select("a");
-        Element statusElement = detailElements.get(3);
+        Elements genreElements = detailElements.get(15).select("a");
+        Element statusElement = detailElements.get(7);
         Element thumbnailUrlElement = parsedDocument.select("div#mangaimg img").first();
 
         LibrarySQLiteOpenHelper librarySQLiteOpenHelper = LibrarySQLiteOpenHelper.getInstance();
